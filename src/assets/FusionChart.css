@@ -1,0 +1,88 @@
+/* FusionChart.css */
+
+.custom-tooltip {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.label {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.separator {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+/* Add some styling for the tooltip arrow */
+.custom-tooltip::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #ccc transparent;
+}
+
+.chart-heading {
+    font-weight: bold;
+    font-size: 16px;
+    fill: #333;
+    /* Text color */
+}
+
+/* FusionChart.css */
+
+.fusion-chart-container {
+    margin: 20px;
+}
+
+.filters {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.custom-tooltip {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-label {
+    margin: 5px 0;
+}
+
+.tooltip-separator {
+    border: 0.5px solid #ccc;
+    margin: 5px 0;
+}
